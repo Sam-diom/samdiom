@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samuel Diomandé | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio de Samuel Diomandé, développeur full-stack JavaScript/Flutter et créateur photo-vidéo professionnel."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="theme-dev">
+    <header class="hero" id="top">
+      <div class="hero__overlay"></div>
+      <nav class="nav glass">
+        <a class="logo" href="#top">SD</a>
+        <div class="nav__links">
+          <a href="#about">À propos</a>
+          <a href="#skills">Compétences</a>
+          <a href="#projects">Projets</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <button class="mode-switch" id="modeSwitch" type="button" aria-label="Changer de profil">
+          <span class="mode-switch__label">Mode Dev</span>
+        </button>
+      </nav>
+
+      <div class="hero__content">
+        <p class="hero__tag" data-dev="Portfolio Développeur" data-photo="Portfolio Photographe">
+          Portfolio Développeur
+        </p>
+        <h1>
+          Samuel Diomandé<br />
+          <span data-dev="Développeur Full-Stack JS/Flutter" data-photo="Photographe & Vidéaste Professionnel"
+            >Développeur Full-Stack JS/Flutter</span
+          >
+        </h1>
+        <p
+          class="hero__description"
+          data-dev="Je conçois des applications web/mobile modernes et performantes en JavaScript et Flutter."
+          data-photo="Je capture des images puissantes et je réalise des vidéos émotionnelles pour valoriser les marques et les personnes."
+        >
+          Je conçois des applications web/mobile modernes et performantes en JavaScript et Flutter.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#projects" data-dev="Voir mes projets dev" data-photo="Voir mes réalisations visuelles"
+            >Voir mes projets dev</a
+          >
+          <a class="btn btn--ghost" href="#contact">Me contacter</a>
+        </div>
+      </div>
+      <div class="scroll-indicator" aria-hidden="true"></div>
+    </header>
+
+    <main>
+      <section id="about" class="section section--parallax" data-parallax="0.2">
+        <div class="section__inner glass">
+          <h2>À propos de moi</h2>
+          <p
+            data-dev="Je suis développeur full-stack JavaScript/Flutter. Je crée des produits utiles, rapides et élégants."
+            data-photo="Je suis photographe et vidéaste professionnel. Je transforme les idées en récits visuels distinctifs."
+          >
+            Je suis développeur full-stack JavaScript/Flutter. Je crée des produits utiles, rapides et élégants.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills" class="section section--dark reveal">
+        <div class="section__inner">
+          <h2 data-dev="Compétences techniques" data-photo="Compétences créatives">Compétences techniques</h2>
+          <div class="cards-grid">
+            <article class="card glass">
+              <h3 data-dev="Développement Web" data-photo="Photographie éditoriale">Développement Web</h3>
+              <p
+                data-dev="JavaScript, Node.js, APIs REST, interfaces responsives."
+                data-photo="Portrait, lifestyle, storytelling visuel et direction artistique."
+              >
+                JavaScript, Node.js, APIs REST, interfaces responsives.
+              </p>
+            </article>
+            <article class="card glass">
+              <h3 data-dev="Applications Flutter" data-photo="Vidéographie">Applications Flutter</h3>
+              <p
+                data-dev="Applications mobiles fluides et orientées expérience utilisateur."
+                data-photo="Captation, montage dynamique, colorimétrie et rendu cinématique."
+              >
+                Applications mobiles fluides et orientées expérience utilisateur.
+              </p>
+            </article>
+            <article class="card glass">
+              <h3 data-dev="Qualité logicielle" data-photo="Post-production">Qualité logicielle</h3>
+              <p
+                data-dev="Architecture maintenable, performance et déploiement continu."
+                data-photo="Retouche avancée, sound design et livraison de contenus premium."
+              >
+                Architecture maintenable, performance et déploiement continu.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section reveal">
+        <div class="section__inner">
+          <h2 data-dev="Projets de référence" data-photo="Réalisations visuelles">Projets de référence</h2>
+          <div class="timeline">
+            <article class="timeline__item glass">
+              <span data-dev="Projet Dev 01" data-photo="Shoot 01">Projet Dev 01</span>
+              <h3 data-dev="Plateforme Web Interactive" data-photo="Shooting Corporate Premium">Plateforme Web Interactive</h3>
+              <p
+                data-dev="Dashboard analytique avec animations fluides pour suivi en temps réel."
+                data-photo="Série photo dédiée au personal branding d'entrepreneurs et dirigeants."
+              >
+                Dashboard analytique avec animations fluides pour suivi en temps réel.
+              </p>
+            </article>
+            <article class="timeline__item glass">
+              <span data-dev="Projet Dev 02" data-photo="Film 02">Projet Dev 02</span>
+              <h3 data-dev="Application Mobile Flutter" data-photo="Film Publicitaire">Application Mobile Flutter</h3>
+              <p
+                data-dev="Application e-commerce optimisée pour la conversion et la performance."
+                data-photo="Vidéo promotionnelle rythmée pour le lancement d'une marque locale."
+              >
+                Application e-commerce optimisée pour la conversion et la performance.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section--accent reveal">
+        <div class="section__inner">
+          <h2>Travaillons ensemble</h2>
+          <p
+            data-dev="Disponible pour missions web/mobile, SaaS, API et produits digitaux."
+            data-photo="Disponible pour shootings, clips, campagnes visuelles et contenus premium."
+          >
+            Disponible pour missions web/mobile, SaaS, API et produits digitaux.
+          </p>
+          <a class="btn btn--primary" href="mailto:samuel@example.com">Envoyer un message</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Samuel Diomandé — Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
