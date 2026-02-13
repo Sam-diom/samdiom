@@ -54,6 +54,28 @@ body {
   padding: 1.5rem 6vw 3rem;
 }
 
+
+.hero__cover {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.hero__cover img {
+  width: 100%;
+  height: 115%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.28;
+  transform: translateY(0);
+  transition: opacity 0.35s ease;
+}
+
+body.theme-photo .hero__cover img {
+  opacity: 0.42;
+}
+
 .hero__overlay {
   position: absolute;
   inset: 0;
@@ -66,7 +88,8 @@ body.theme-photo .hero__overlay {
 }
 
 .nav,
-.hero__content {
+.hero__content,
+.scroll-indicator {
   position: relative;
   z-index: 2;
 }
@@ -202,12 +225,14 @@ body.theme-photo .hero__overlay {
     url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1600&q=80')
       center / cover;
   background-attachment: fixed;
+  background-position: center 50%;
 }
 
 body.theme-photo .section--parallax {
   background: linear-gradient(0deg, rgba(248, 240, 230, 0.75), rgba(248, 240, 230, 0.75)),
     url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1600&q=80')
       center / cover;
+  background-position: center 50%;
 }
 
 .section--dark {
@@ -347,5 +372,9 @@ body.theme-photo .section--parallax {
 
   .hero__content {
     margin-top: 2.5rem;
+  }
+
+  .hero__cover img {
+    height: 108%;
   }
 }
